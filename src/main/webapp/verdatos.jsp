@@ -35,6 +35,10 @@ if (okdb) {
 	if (tablares != null) {
 		
 		resultado = "<table style='margin-left: auto; margin-right: auto; border: solid 0.5px black;'>";
+		resultado += "<thead>";
+		resultado += "<th style ='border-bottom: solid 0.5px black; '>Apellidos   </th>";
+		resultado += "<th style ='border-bottom: solid 0.5px black;'>   Nombre</th>";
+		resultado += "</thead>";
 		for (int i=0; i<tablares.length;i++) { //g es una variable tipo grupo que va recorriendo la lista
 			resultado += "<tr>";
 			resultado += "<td>" + tablares[i][0] + "</td>";
