@@ -5,9 +5,11 @@
 <%@page import="java.sql.SQLException"%>
 
 <%
+String usuario="";
 try {  //AQUI VA EL CONTROL DE SESION
-	String acceso = session.getAttribute("attributo1").toString();
- 	if (!acceso.equals("1")) response.sendRedirect("cerrarsesion.jsp");
+	usuario=session.getAttribute("attributo2").toString();
+	String acceso = session.getAttribute("tipo").toString();
+ 	if (!acceso.equals("1") || !usuario.equals("admin")) response.sendRedirect("cerrarsesion.jsp");
 } catch (Exception e) {
 	response.sendRedirect("cerrarsesion.jsp");
 }

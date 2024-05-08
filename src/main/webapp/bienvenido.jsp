@@ -10,8 +10,9 @@
 String usuario="";
 try {  //AQUI VA EL CONTROL DE SESION
 	usuario=session.getAttribute("attributo2").toString();
-	String acceso = session.getAttribute("attributo1").toString();
+	String acceso = session.getAttribute("tipo").toString();
  	if (!acceso.equals("1")) response.sendRedirect("cerrarsesion.jsp");
+ 
 } catch (Exception e) {
 	response.sendRedirect("cerrarsesion.jsp");
 }
