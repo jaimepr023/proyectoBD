@@ -26,7 +26,7 @@ try {  //AQUI VA EL CONTROL DE SESION
 <h1>Bienvenido <%=usuario %></h1>
 Sesión iniciada
 <hr/>
-<a href="#">Insertar Datos</a><br/>
+<a href="entregaDatos.jsp">Insertar Datos</a><br/>
 <a href="verdatos.jsp">Acceder a los Datos</a><br/>
 <br/><br/><a href="cerrarsesion.jsp">Salir</a>
 </body>

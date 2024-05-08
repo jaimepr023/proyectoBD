@@ -24,7 +24,7 @@ try {
 	//e.printStackTrace();
 }
 if (okdb) {
-	String query="select concat('La Base de Datos dice que ahora es... ', now() )";
+	String query="select aoellidosUsuarios, nombresUsuarios from Usuarios";
 	String [][] tablares = null;
 	try {
 		tablares = db.resConsultaSelectA3(query);
@@ -34,12 +34,11 @@ if (okdb) {
 	}
 	if (tablares != null) {
 		
-		resultado = "<table style=''>";
+		resultado = "<table style='margin-left: auto; margin-right: auto; border: solid 0.5px black;'>";
 		for (int i=0; i<tablares.length;i++) { //g es una variable tipo grupo que va recorriendo la lista
 			resultado += "<tr>";
 			resultado += "<td>" + tablares[i][0] + "</td>";
 			resultado += "<td>" + tablares[i][1] + "</td>";
-			resultado += "<td>" + tablares[i][2] + "</td>";
 			resultado += "</tr>";
 		}
 		resultado += "</table>";
@@ -59,6 +58,9 @@ else {
 <link rel="stylesheet" href="common/general.css">
 
 </head>
+<style>
+
+</style>
 <body>
 <h1><%=session.getAttribute("attributo2") %>: Estos son los datos datos</h1>
 <hr/>
