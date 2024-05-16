@@ -15,7 +15,7 @@ public class beanDB {
 		public void conectarBD() throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-			cn=DriverManager.getConnection("jdbc:mysql://74.226.196.212/BaseDeUsuarios","jaime02304","JaimeDominio023*JAJA++**çç::..::..");
+			cn=DriverManager.getConnection("jdbc:mysql://ipServer/NombreBD","NombreUsuarioBD","contraBD");
 		}
 
 	    //----- M�todo que realiza la desconexi�n de la BD
