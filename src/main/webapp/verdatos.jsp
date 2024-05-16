@@ -39,7 +39,7 @@ if (okdb) {
 
 		resultado = "<table style='margin-left: auto; margin-right: auto; border: solid 0.5px black;'>";
 		resultado += "<thead>";
-		resultado += "<th style ='border-bottom: solid 0.5px black; '>Id   </th>";
+		resultado += "<th style ='border-bottom: solid 0.5px black;'>Id</th>";
 		resultado += "<th style ='border-bottom: solid 0.5px black;'>Nombre</th>";
 		resultado += "<th style ='border-bottom: solid 0.5px black;'>Apellidos</th>";
 		resultado += "<th style ='border-bottom: solid 0.5px black;'>Correo</th>";
